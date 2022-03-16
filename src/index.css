@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  font-family: "Inter", "Courier New";
+  height: fit-content;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f55a5a;
+  height: 55px;
+  width: 100vw;
+}
+
+.nav-container > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 14px;
+}
+
+.nav-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  max-height: max-content;
+  background-color: #fff;
+  margin: 0 6vw;
+  margin-top: 7vh;
+}
+
+.card {
+  height: 26.5vh;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+.card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 24vh;
+  width: 80%;
+  padding: 0 2.5vw;
+}
+
+.card--content > h2 {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.card > img {
+  object-fit: cover;
+  width: 24vw;
+  height: 24vh;
+  border-radius: 5px;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 12px;
+}
+
+.locale {
+  display: flex;
+  align-items: center;
+  font-size: 10.5px;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.locale > p {
+  margin-left: 4px;
+  letter-spacing: 0.2em;
+}
+
+.locale > img {
+  width: 7px;
+  height: 10px;
+}
+
+.locale > a {
+  color: #918e9b;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 550px) {
+  .card > img {
+    width: 125px;
+  }
+
+  .card--content > h2 {
+    font-size: 16px;
+  }
+
+  .locale {
+    margin-top: 0;
+  }
+
+  .card--content {
+    width: 65%;
+  }
+
+  .locale {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: 10.5px;
+  }
+}
